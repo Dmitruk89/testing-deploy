@@ -19,8 +19,15 @@
 	padding: 8px 20px;
 	border: 0;
 	border-radius: 4px;
-	background-color: rgb(213, 66, 21);
+	background: rgb(213, 66, 21);
 	cursor: pointer;
 	text-decoration: none;
 	margin: 20px auto;
+ }
+ .ingredients {
+	display: flex;
+	align-items: center;
+ }
+ .ingredients button {
+	margin: 0 0 0 10px;
  }
