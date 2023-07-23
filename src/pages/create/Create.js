@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useFetch } from "../../hooks/useFetch";
 
 // styles
@@ -34,6 +34,14 @@ export default function Create() {
     setNewIngredient("");
     ingredientInput.current.focus();
   };
+
+  // redirect the user when we get data response
+  useEffect(() => {
+	if (data) {
+		
+	}
+  }, [data])
+
 
   return (
     <div className="create">
