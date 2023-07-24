@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import React from 'react'
 
 function RecipeList({recipe}) {
+
+	if (recipe.length === 0) {
+		return <div className='error'>No recipes to load...</div>
+	}
+
   return (
 	 <div className='recipe-list'>
 		{recipe.map(recipe => (
