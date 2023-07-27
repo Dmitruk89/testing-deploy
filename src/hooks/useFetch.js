@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 export const useFetch = (url, method = "GET") => {
   const [data, setData] = useState(null)
@@ -21,6 +21,7 @@ export const useFetch = (url, method = "GET") => {
 
     const fetchData = async (fetchOptions) => {
       setIsPending(true)
+		
       
       try {
         const res = await fetch(url, { ...fetchOptions, signal: controller.signal })
