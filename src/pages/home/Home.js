@@ -1,14 +1,12 @@
 import "./Home.css";
 import { useFetch } from "../../hooks/useFetch";
-
 import React from "react";
 
 
-//components
 import RecipeList from "../../components/RecipeList";
 
 function Home() {
-  const { data, isPending, error } = useFetch(" http://localhost:3000/recipes");
+  const { data, isPending, error } = useFetch(" http://localhost:3000/recipes")
 
   return (
     <div className="home">
