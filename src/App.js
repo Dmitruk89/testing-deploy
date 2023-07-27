@@ -13,7 +13,9 @@ import ThemeSelector from './components/ThemeSelector'
 import './App.css'
 
 function App() {
+	
   const { mode } = useTheme()
+
 
   return (
     <div className={`App ${mode}`}>
